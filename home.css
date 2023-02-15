@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "VKSansMedium";
+    font-style: normal;
+    font-weight: 400;
+    src: local("VKSansMedium"),
+        url("/fonts/VKSansMedium.ttf") format("ttf"),
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "MyFont";
+    src: url("/fonts/VKSansMedium.ttf") format("ttf");
+  }
+
+#text {
+    transition: color 0.89s;
+    font-size: 33px;
+    font-family: "VKSansMedium", sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
