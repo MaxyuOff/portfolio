@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Game</title>
+</head>
+
+<body>
+    <div class="center"><h1 id = "text">лох не тот кто лох, а тот кто прочитал</h1></div>
+</body>
+<script>
+    function mainFunc() {
+        let a = Math.floor(Math.random() * 255);
+        let b = Math.floor(Math.random() * 255);
+        let c = Math.floor(Math.random() * 255);
+        document.getElementById("text").style.color = `rgb(${a}, ${b}, ${c})`;
+    }
+    setInterval(mainFunc, 500)
+</script>
+
+</html>
