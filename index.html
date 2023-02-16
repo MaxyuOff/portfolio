@@ -8,7 +8,7 @@
     <title>MaxyuOff Portfolio</title>
 </head>
 
-<body>
+<body oncopy="return false">
     <div class="center"><h1 id = "text">лох не тот кто лох, а тот кто прочитал</h1></div>
 </body>
 <script>
@@ -28,7 +28,15 @@
         textElement.style.left = `${x}px`;
         textElement.style.top = `${y}px`;
     }
-    setInterval(mainFunc, 500)
+    setInterval(mainFunc, 200)
+
+    let audioFiles = ["sounds/-blin-zachem-ya-syuda-prishel.mp3","sounds/boy-next-door.mp3",'sounds/brue.mp3','sounds/dungeon-master.mp3','sounds/ebanyii-v-rot-etogo-kazino.mp3', 'sounds/eralash.mp3','sounds/es-minus-ehuuu.mp3','sounds/eto-fiasko-bratan.mp3','sounds/fisting-is-300-.mp3','sounds/fuck-you.mp3','sounds/fucking-slaves-get-your-ass-back-here.mp3','sounds/gde-tyi.mp3'];
+
+    document.addEventListener("click", function() {
+    let randomAudioFile = audioFiles[Math.floor(Math.random() * audioFiles.length)];
+    let audioElement = new Audio(randomAudioFile);
+    audioElement.play();
+});
 </script>
 
 </html>
